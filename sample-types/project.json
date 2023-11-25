@@ -11,7 +11,7 @@
         "outputPath": "dist/sample-types",
         "main": "sample-types/src/index.ts",
         "tsConfig": "sample-types/tsconfig.lib.json",
-        "assets": ["sample-types/*.md"]
+        "assets": ["sample-types/*.md", "sample-types/src/types/*"]
       }
     },
     "publish": {

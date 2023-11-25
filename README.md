@@ -13,13 +13,14 @@ Now we have `sample-types/` library generated
 ```
 # Move to our sample library directory
 cd `sample-types/src`
+
 # Generate type declaration file from schema
-npx json2ts schemas/sample.schema.json types/sample.d.ts
+npx json2ts schemas/sample.schema.json types/sample.d.ts --bannerComment="/*Description for this type*/"
 ```
 
 ### Publish to npm package
 
-`nx publish sample-types --ver=1.0.0`
+`nx publish sample-types --ver=0.0.1`
 
 ### Example of usage
 

@@ -1,7 +1,16 @@
-# sample-types
+## Install
 
-This library was generated with [Nx](https://nx.dev).
+```
+npm install @nguyentamgm/sample-types
+```
 
-## Building
+## Use declared types
 
-Run `nx build sample-types` to build the library.
+```
+import {ExampleDTO} from @nguyentamgm/sample-types;
+
+const exampleDto: ExampleDTO = {
+  firstName: "Foo",
+  lastName: "Bar",
+};
+```
