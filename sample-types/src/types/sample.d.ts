@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface ExampleSchema {
+export interface ExampleDTO {
   firstName: string;
   lastName: string;
   /**
