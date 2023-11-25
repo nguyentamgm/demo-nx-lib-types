@@ -1,1 +1,1 @@
-export * from './lib/sample-types';
+export * from './types';
