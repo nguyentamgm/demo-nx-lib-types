@@ -22,13 +22,15 @@ npx json2ts schemas/sample.schema.json types/sample.d.ts
 `nx publish sample-types --ver=1.0.0`
 
 ### Example of usage
-`
+
+```
 import {ExampleDTO} from @nguyentamgm/sample-types;
 
 const exampleDto: ExampleDTO = {
   firstName: "Foo",
   lastName: "Bar",
 };
-`
+```
 
+---
 ### To create a new npm package, just repeat the above process, basically this repo can contain multiple libraries
