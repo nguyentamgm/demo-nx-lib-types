@@ -1,0 +1,33 @@
+{
+  "name": "sample-types",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "sample-types/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/sample-types",
+        "main": "sample-types/src/index.ts",
+        "tsConfig": "sample-types/tsconfig.lib.json",
+        "assets": ["sample-types/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs sample-types {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "sample-types/**/*.ts",
+          "sample-types/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
